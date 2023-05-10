@@ -17,8 +17,8 @@ project_entries:
     url: bellabeat.html
     desc: Projects are shown in card layout
 
-  - title: Project 3
-    url: overview-post
+  - title: Test Page
+    url: testpage.html
     desc: You can control visibility from _config.yml file
 
   - title: Project 4

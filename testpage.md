@@ -1,3 +1,9 @@
+---
+layout: post
+title: Test Page
+---
+
+Hello test pageeeeee
 
 # Introduction
 
