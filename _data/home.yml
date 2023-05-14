@@ -14,26 +14,8 @@ project_entries:
     desc: This is an example project, configured in _data/home.yml
 
   - title: Bellabeat Project
-    url: bellabeat.html
-    desc: Projects are shown in card layout
-
-  - title: Test Page
-    url: testpage.html
-    desc: You can control visibility from _config.yml file
-
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
-
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
-
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+    url: notebook/bellabeat.html
+    desc: Using SQL and Tableau to analyze FitBit data
 
 footer_entries:
 
@@ -43,7 +25,7 @@ footer_entries:
   - title: github
     url: https://github.com/peachtaco
 
-  - title: feed
+  - title: email
     url: feed.xml
 
 misc_entries:

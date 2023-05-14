@@ -38,10 +38,11 @@ li { margin: 0.4em 0; }
 }
 
 table, th, td {
-  width: 100%;
+  width: auto;
   border: thin solid black;
   border-collapse: collapse;
   padding: 0.4em;
+  text-align: center;
 }
 
 div.highlighter-rouge pre code, pre code.highlighter-rouge {
@@ -62,14 +63,16 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
 }
 html {
-    --bg: #FFF;
-    --bg-secondary: #f3f4f6;
-    --headings: #1e293b;
-    --text: #374151;
+    --bg: #fef5ed;
+    --bg-secondary: #e5dccb;
+    --headings: #3c403b;
+    --text: #3c403b;
     --text-secondary: #6b7280;
-    --links: #6366f1;
+    --links: #668c54;
     --highlight: #FFECB2; // light yellow
     --code-text: #9D174D;
     --share-text: #999;
