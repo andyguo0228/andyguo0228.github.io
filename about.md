@@ -3,6 +3,7 @@ layout: post
 title: About
 ---
 
-This is an example page!
+This is about me
 
-Actually, it has the same layout of a post...
+Test page 1234565
+
