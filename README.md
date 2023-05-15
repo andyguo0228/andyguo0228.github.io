@@ -1,5 +1,7 @@
 ### Hi there 👋 I'm Andy Guo
 
+This is my data analyst portfolio website
+
 <!--
 **Peachtaco/peachtaco** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
