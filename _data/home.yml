@@ -1,9 +1,9 @@
 navbar_entries:
-  - title: about
-    url: about
+  - title: home
+    url: index.html
 
-  - title: blog
-    url: blog
+  - title: about
+    url: 
 
   - title: website
     url: 
@@ -11,11 +11,15 @@ navbar_entries:
 project_entries:
   - title: About Me
     url: about.html
-    desc: This is an example project, configured in _data/home.yml
+    desc: all about me
 
   - title: Bellabeat Project
     url: notebook/bellabeat.html
     desc: Using SQL and Tableau to analyze FitBit data
+
+  - title: Divvy Bike Project
+    url: notebook/bike_share_project.html
+    desc: Python to analyze Divvy Bike Share data
 
 footer_entries:
 
