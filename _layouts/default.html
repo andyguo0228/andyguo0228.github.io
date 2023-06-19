@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "auto" }}">
-        {%- include head.html -%}
-  <body>
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="https://kit.fontawesome.com/75f9dbfed3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
         <div class="sidebar">
-          {%- include sidebar.html -%}
+            {% if site.theme_config.show_sidebar == true %}
+            {% include sidebar.html collection=site.data.home.contact %}
+            {% endif %}
+
+            <div class="name">
+                <h1>Andy Guo</h1>
+                <a href="https://github.com/Peachtaco"><i class="fa-brands fa-github"></i> Github</a>
+                <br>
+                <a href="https://www.linkedin.com/in/andyguo1/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <br>
+                <a href="mailto:andyguo0228@gmail.com"><i class="fa-regular fa-envelope"></i> andyguo0228@gmail.com</a>
+                <p>I am a passionate data analyst with a keen eye for detail and knack for transforming complex data
+                    into user friendly visualizations. </p>
+            </div>
+
         </div>
-        <div class="w">
-          {{ content }}
-          <div class="credits">
-            {%- if site.theme_config.show_copyright == true -%}
-            &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
-            &nbsp;
-            {%- endif -%}
-          </div>
+        <div class="content">
+            {{ content }}
+
+            <!-----------Project List----------------->
+            {% if site.theme_config.show_projects == true %}
+            <h2>{{ site.theme_config.home.title_projects }}</h2>
+            {% include cardlist.html collection=site.data.home.project_entries %}
+            {% endif %}
+
+            <h2>Contact Me</h2>
+            <p>If you would like to get in touch with me, please feel free to reach out via email or connect with me on
+                social media.</p>
+            <p>Email: example@example.com</p>
+            <p>Twitter: @example</p>
+            <p>LinkedIn: www.linkedin.com/in/example</p>
         </div>
-      </div>
-    </main>
-  </body>
+
+    </div>
+    </div>
+</body>
+
 </html>

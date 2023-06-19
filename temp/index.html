@@ -4,17 +4,23 @@
 <head>
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/75f9dbfed3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="sidebar">
 
-    
+
             <div class="name">
                 <h1>Andy Guo</h1>
-                <p>I'm a data analyst and this is my portfolio website. </p>
-                <p>I'm a data analyst and this is my portfolio websiteI'm a data analyst and this is my portfolio website</p>
+                <a href="https://github.com/Peachtaco"><i class="fa-brands fa-github"></i> Github</a>
+                <br>
+                <a href="https://www.linkedin.com/in/andyguo1/"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <br>
+                <a href="mailto:andyguo0228@gmail.com"><i class="fa-regular fa-envelope"></i> andyguo0228@gmail.com</a>
+                <p>I am a passionate data analyst with a keen eye for detail and knack for transforming complex data
+                    into user friendly visualizations. </p>
             </div>
             <div class="nav">
                 <a href="#" class="active">Home</a>
@@ -44,15 +50,7 @@
                 performance optimizations. I am constantly learning and exploring new technologies to enhance my skills.
             </p>
 
-            <h2>Projects</h2>
-            <h3>Project 1: Website Redesign</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a diam eu erat elementum consequat.</p>
-
-            <h3>Project 2: E-commerce Store</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a diam eu erat elementum consequat.</p>
-
-            <h3>Project 3: Portfolio Website</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a diam eu erat elementum consequat.</p>
+            {% include cardlist.html %}
 
             <h2>Contact Me</h2>
             <p>If you would like to get in touch with me, please feel free to reach out via email or connect with me on
