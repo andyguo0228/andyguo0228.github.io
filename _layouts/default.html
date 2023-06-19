@@ -3,17 +3,18 @@
         {%- include head.html -%}
   <body>
     <main class="page-content" aria-label="Content">
-      <div class="w">
-        {{ content }}
-        {% if site.theme_config.appearance_toggle %}
-          {% include toggle_theme_button.html %}
-        {% endif %}
-        <div class="credits">
-          {%- if site.theme_config.show_copyright == true -%}
-          &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
-          &nbsp;
-          {%- endif -%}
-
+      <div class="wrapper">
+        <div class="sidebar">
+          {%- include sidebar.html -%}
+        </div>
+        <div class="w">
+          {{ content }}
+          <div class="credits">
+            {%- if site.theme_config.show_copyright == true -%}
+            &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
+            &nbsp;
+            {%- endif -%}
+          </div>
         </div>
       </div>
     </main>
