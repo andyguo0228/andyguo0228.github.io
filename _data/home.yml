@@ -9,9 +9,6 @@ navbar_entries:
     url: 
 
 project_entries:
-  - title: About Me
-    url: about.html
-    desc: all about me
 
   - title: Bellabeat Project
     url: notebook/bellabeat.html

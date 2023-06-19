@@ -11,6 +11,9 @@ body {
     float: left;
 }
 
+.name {
+    padding-top: 20px;
+}
 .name h1 {
     font-size: 2em;
     margin: 0;

@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="nav">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+<html lang="{{ page.lang | default: "en" }}" class="html" data-theme="{{ site.theme_config.appearance | default: "auto" }}">
+        {%- include head.html -%}
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="sidebar">
+          {%- include sidebar.html -%}
         </div>
-        <div class="content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget ex neque. Nullam et nulla ut justo
-                semper finibus. Aenean eget bibendum sapien, et scelerisque ex. Curabitur ac ultrices leo.</p>
-            <p>Mauris dignissim metus leo, non hendrerit lorem malesuada in. Nullam auctor dignissim neque id tincidunt.
-                Integer finibus, enim eu pellentesque tincidunt, arcu enim consequat risus, id bibendum justo enim ut
-                ligula.</p>
+        <div class="w">
+          {{ content }}
+          <div class="credits">
+            {%- if site.theme_config.show_copyright == true -%}
+            &copy;&nbsp;{{ "now" | date: "%Y" }}&nbsp;{{site.author}}
+            &nbsp;
+            {%- endif -%}
+          </div>
         </div>
-    </div>
-</body>
-
+      </div>
+    </main>
+  </body>
 </html>
