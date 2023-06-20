@@ -5,6 +5,10 @@ html {
     color: #3c403b;
 }
 
+h2, h3 {
+    line-height: 1;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -27,6 +31,10 @@ body {
     color: #6a8c52;
     text-align: left;
     line-height: 30px;
+}
+
+.sidebar h2 {
+    line-height: 0.5;
 }
 
 .name {

@@ -20,6 +20,10 @@ body {
     line-height: 30px;
 }
 
+.sidebar h2 {
+    line-height: 0.7;
+}
+
 .name {
     padding-top: 20px;
 }
