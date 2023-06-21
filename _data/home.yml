@@ -18,42 +18,16 @@ project_entries:
     url: notebook/bike_share_project.html
     desc: Python to analyze Divvy Bike Share data
 
-footer_entries:
+contact_entries:
 
-  - title: twitter
-    url: https://twitter.com
-
-  - title: github
+  - title: Github
     url: https://github.com/peachtaco
+    icon: fa-brands fa-github
 
-  - title: email
-    url: feed.xml
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/andyguo1/
+    icon: fa-brands fa-linkedin
 
-misc_entries:
-  - title: this is an example vertical list
-    url: false
-
-  - title: you can show or hide using a boolean flag in _config.yml
-    url: false
-
-  - title: and you can add data in _data/home.yml
-    url: false
-
-  - title: Blog posts
-    post_list: true
-    url: false
-
-  - title: moonwalk on the Internet
-    url: false
-    entries:
-
-      - title: this list is scalable and can be nested
-        url: false
-        entries:
-          - title: this is nested inside a nested list
-            url: false
-
-          - title: it is easy to use, see _data/home.yml to see how to configure it.
-            url: false
-
-
+  - title: andyguo0228@gmail.com
+    url: mailto:andyguo0228@gmail.com
+    icon: fa-regular fa-envelope

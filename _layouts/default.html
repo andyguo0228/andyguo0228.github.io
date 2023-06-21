@@ -11,8 +11,13 @@
     <div class="container">
         <div class="sidebar">
             {% if site.theme_config.show_sidebar == true %}
-            {% include sidebar.html collection=site.data.home.contact %}
+            {% include sidebar.html collection=site.data.home.side %}
             {% endif %}
+            <div class="contact">
+                {% if site.theme_config.show_contact == true %}
+                {% include contact.html collection=site.data.home.contact_entries %}
+                {% endif %}
+            </div>
         </div>
         <div class="content">
             {{ content }}

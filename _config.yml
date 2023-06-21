@@ -18,6 +18,7 @@ theme_config:
   show_description: true # show blog description
   show_navbar: true # show horizontal navbar
   show_sidebar: true
+  show_contact: true
   show_footer: true # show footer links in home page,add in _data/home.yml
   show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
@@ -29,8 +30,8 @@ theme_config:
   show_tags: true # show tags in a blog posts
   # options for "home" page
   home:
-    title_projects: Portfolio
-    title_misc_list: Details
+    title_projects: Projects
+    title_contact: Contact Me
     title_blog: Blog
     title_old_projects: Old Projects
 
@@ -41,6 +42,5 @@ sass:
   style: :compressed
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jemoji
