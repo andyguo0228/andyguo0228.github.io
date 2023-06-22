@@ -20,21 +20,21 @@ body {
     margin: 0;
 }
 
-.sidebar {
+header {
     width: 270px;
     position: fixed;
     float: left;
     margin: 0 20px;
 }
 
-.sidebar a {
+header a {
     text-decoration: none;
     color: #6a8c52;
     text-align: left;
     line-height: 30px;
 }
 
-.sidebar h2 {
+header h2 {
     line-height: 0.5;
 }
 
@@ -54,25 +54,24 @@ body {
     margin: 50px auto;
 }
 
-.nav {
-    width: 250px;
-    height: 100%;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+
+footer {
+    width: 270px;
+    position: fixed;
+    float: left;
+    bottom: 50px;
 }
 
-.contact {
-    display: block;
-}
-
-ul.contact-list {
+footer ul.contact-list {
     list-style-type: none;
     padding: 0;
-    align-self: end;
-    li {
-    }
+}
+
+footer a {
+    text-decoration: none;
+    color: #6a8c52;
+    text-align: left;
+    line-height: 30px;
 }
 
 .content {

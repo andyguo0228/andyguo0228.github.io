@@ -9,16 +9,11 @@
 
 <body>
     <div class="container">
-        <div class="sidebar">
+        <header>
             {% if site.theme_config.show_sidebar == true %}
             {% include sidebar.html collection=site.data.home.side %}
             {% endif %}
-            <div class="contact">
-                {% if site.theme_config.show_contact == true %}
-                {% include contact.html collection=site.data.home.contact_entries %}
-                {% endif %}
-            </div>
-        </div>
+        </header>
         <div class="content">
             {{ content }}
 
@@ -28,8 +23,11 @@
             {% include cardlist.html collection=site.data.home.project_entries %}
             {% endif %}
         </div>
-
-    </div>
+        <footer>
+            {% if site.theme_config.show_contact == true %}
+            {% include contact.html collection=site.data.home.contact_entries %}
+            {% endif %}
+        </footer>
     </div>
 </body>
 
