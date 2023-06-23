@@ -231,10 +231,9 @@ axes[1].spines['right'].set_visible(False)
 plt.show()
 ```
 
-
-    
-![png](bike_share_project_files/bike_share_project_10_0.png)
-    
+<div class="image-container">
+  <img src="bike_share_project_files/bike_share_project_10_0.png" class="small-image" onclick="enlargeImage(this)">
+</div>      
 
 
 
@@ -275,237 +274,6 @@ The data was checked for outliers. 328 rows were found with 0 or negative durati
 # Summary of all columns
 df.describe(include='all')
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>ride_id</th>
-      <th>rideable_type</th>
-      <th>started_at</th>
-      <th>ended_at</th>
-      <th>start_station_name</th>
-      <th>start_station_id</th>
-      <th>end_station_name</th>
-      <th>end_station_id</th>
-      <th>start_lat</th>
-      <th>start_lng</th>
-      <th>end_lat</th>
-      <th>end_lng</th>
-      <th>member_casual</th>
-      <th>duration</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>4533999</td>
-      <td>4533999</td>
-      <td>4533999</td>
-      <td>4533999</td>
-      <td>4533999</td>
-      <td>4533999</td>
-      <td>4533999</td>
-      <td>4533999</td>
-      <td>4.533999e+06</td>
-      <td>4.533999e+06</td>
-      <td>4.533999e+06</td>
-      <td>4.533999e+06</td>
-      <td>4533999</td>
-      <td>4.533999e+06</td>
-    </tr>
-    <tr>
-      <th>unique</th>
-      <td>4533999</td>
-      <td>3</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>1613</td>
-      <td>1282</td>
-      <td>1651</td>
-      <td>1292</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>top</th>
-      <td>EC2DE40644C6B0F4</td>
-      <td>classic_bike</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Streeter Dr &amp; Grand Ave</td>
-      <td>13022</td>
-      <td>Streeter Dr &amp; Grand Ave</td>
-      <td>13022</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>member</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>freq</th>
-      <td>1</td>
-      <td>2639080</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>70849</td>
-      <td>70849</td>
-      <td>72327</td>
-      <td>72327</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2742885</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2022-09-18 05:55:25.043074048</td>
-      <td>2022-09-18 06:11:58.661472</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4.190175e+01</td>
-      <td>-8.764498e+01</td>
-      <td>4.190202e+01</td>
-      <td>-8.764509e+01</td>
-      <td>NaN</td>
-      <td>1.705459e+01</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2022-05-01 00:00:06</td>
-      <td>2022-05-01 00:05:17</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4.164850e+01</td>
-      <td>-8.783332e+01</td>
-      <td>0.000000e+00</td>
-      <td>-8.783000e+01</td>
-      <td>NaN</td>
-      <td>-1.680000e+02</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2022-07-01 16:33:53</td>
-      <td>2022-07-01 16:50:27.500000</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4.188103e+01</td>
-      <td>-8.765839e+01</td>
-      <td>4.188103e+01</td>
-      <td>-8.765862e+01</td>
-      <td>NaN</td>
-      <td>6.000000e+00</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2022-08-26 17:22:56</td>
-      <td>2022-08-26 17:40:57</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4.189680e+01</td>
-      <td>-8.764189e+01</td>
-      <td>4.189745e+01</td>
-      <td>-8.764288e+01</td>
-      <td>NaN</td>
-      <td>1.100000e+01</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2022-11-07 07:47:27.500000</td>
-      <td>2022-11-07 07:57:32</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4.192877e+01</td>
-      <td>-8.762858e+01</td>
-      <td>4.192889e+01</td>
-      <td>-8.762858e+01</td>
-      <td>NaN</td>
-      <td>1.900000e+01</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>2023-04-30 23:58:48</td>
-      <td>2023-05-01 08:06:56</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4.206487e+01</td>
-      <td>-8.752531e+01</td>
-      <td>4.206485e+01</td>
-      <td>0.000000e+00</td>
-      <td>NaN</td>
-      <td>3.203600e+04</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>4.290939e-02</td>
-      <td>2.508129e-02</td>
-      <td>7.038562e-02</td>
-      <td>1.191313e-01</td>
-      <td>NaN</td>
-      <td>3.622343e+01</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
 
 
 ```python
@@ -562,9 +330,9 @@ plt.show()
 ```
 
 
-    
-![png](bike_share_project_files/bike_share_project_17_0.png)
-    
+<div class="image-container">
+  <img src="bike_share_project_files/bike_share_project_17_0.png" class="small-image" onclick="enlargeImage(this)">
+</div>      
 
 
 Next, I wanted to see if there were any differences in duration between the two types of riders. I created a box plot and found that casual riders tend to have a longer ride duration compared to members. This could be because casual riders are more likely to use the bikes for leisure or recreational activities, which are not time-constrained, while members might use the bikes more for commuting, which is usually time-constrained. 
@@ -591,9 +359,9 @@ plt.show()
 ```
 
 
-    
-![png](bike_share_project_files/bike_share_project_19_0.png)
-    
+<div class="image-container">
+  <img src="bike_share_project_files/bike_share_project_19_0.png" class="small-image" onclick="enlargeImage(this)">
+</div>      
 
 
 Next, I wanted to see which bike station was being used the most and by which type of rider. I also wanted to use the geospatial data to plot the stations on a map to look for possible patterns. While preparing the data to plot, I found that many stations did not have a unique latitude/longitude which made it difficult to plot on a map. I decided to pull live station data from the [GBFS JSON Feed](https://gbfs.divvybikes.com/gbfs/gbfs.json) on the Divvy website and create a dataframe with unique station names and coordinates. I then merged the newly created dataframe with a dataframe of the top stations; the resulting dataframe contained the top 10 stations by count along with their corresponding unique coordinates. 
@@ -877,9 +645,9 @@ plt.show()
 ```
 
 
-    
-![png](bike_share_project_files/bike_share_project_24_0.png)
-    
+<div class="image-container">
+  <img src="bike_share_project_files/bike_share_project_24_0.png" class="small-image" onclick="enlargeImage(this)">
+</div>    
 
 
 Next, I wanted to look at when bikes were used the most/least and created bar plots to look at the numbers of rides by month, day of the week, and hour. I found that both members and casual riders used bikes the most during the summer months (June, July, and August), while usage dipped to its lowest in the winter months (December, January, and February). I also found that casual riders tend to ride less during the weekdays and more on the weekends. However, the pattern was reversed for members, who had a higher number of rides during the weekdays and fewer on the weekends. When it came to the time of day, there were two distinct peaks in bike usage for members; one in the morning at 8AM and another in the evening at 5PM. For casual riders, the most significant number of rides was observed in the evening at 5PM.
@@ -898,10 +666,9 @@ sns.despine()
 plt.show()
 ```
 
-
-    
-![png](bike_share_project_files/bike_share_project_26_0.png)
-    
+<div class="image-container">
+  <img src="bike_share_project_files/bike_share_project_26_0.png" class="small-image" onclick="enlargeImage(this)">
+</div>      
 
 
 
@@ -919,8 +686,9 @@ plt.show()
 ```
 
 
-    
-![png](bike_share_project_files/bike_share_project_27_0.png)
+<div class="image-container">
+  <img src="bike_share_project_files/bike_share_project_27_0.png" class="small-image" onclick="enlargeImage(this)">
+</div>  
     
 
 
@@ -939,10 +707,9 @@ sns.despine()
 plt.show()
 ```
 
-
-    
-![png](bike_share_project_files/bike_share_project_28_0.png)
-    
+<div class="image-container">
+  <img src="bike_share_project_files/bike_share_project_28_0.png" class="small-image" onclick="enlargeImage(this)">
+</div>      
 
 
 ## Insights and Recommendations
