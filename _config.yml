@@ -39,7 +39,7 @@ theme_config:
 highlighter: rouge
 
 sass:
-  style: :compressed
+  style: expanded
 
 plugins:
   - jekyll-seo-tag

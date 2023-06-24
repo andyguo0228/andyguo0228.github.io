@@ -3,6 +3,8 @@
 
 html {
     color: #3c403b;
+    visibility: visible;
+    opacity: 1;
 }
 
 h2, h3 {
@@ -24,8 +26,7 @@ header {
     width: 270px;
     position: fixed;
     float: left;
-    margin: 0 20px;
-    left: 40px;
+    margin: 50px;
 }
 
 header a {
@@ -61,8 +62,7 @@ footer {
     position: fixed;
     float: left;
     bottom: 50px;
-    margin: 0 20px;
-    left: 40px;
+    margin: 50px;
 }
 
 footer ul.contact-list {
@@ -79,7 +79,7 @@ footer a {
 
 .content {
     width: 600px;
-    margin: 0 50px;
+    margin: 50px;
     float: right;
 }
 

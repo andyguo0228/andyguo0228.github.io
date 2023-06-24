@@ -11,3 +11,9 @@ Technical Skills
 - Skilled in Python for data analysis and statistical modeling.
 - Experience with data visualization tools such as Tableau.
 - Familiarity with Excel for data cleaning, analysis, and reporting.
+
+About Me
+--------
+Hi, my name is Andy Guo. I'm a self-taught data analyst and currently work as a medical scribe at a cancer center. 
+
+In February 2022 I decided it was time for a change and started learning about data science. Since writing my first SQL query, I've been fascinated with anything related to data or coding. 

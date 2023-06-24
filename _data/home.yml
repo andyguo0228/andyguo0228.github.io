@@ -22,12 +22,12 @@ contact_entries:
 
   - title: Github
     url: https://github.com/peachtaco
-    icon: fa-brands fa-github
+    icon: lab la-github la-lg
 
   - title: LinkedIn
     url: https://www.linkedin.com/in/andyguo1/
-    icon: fa-brands fa-linkedin
+    icon: lab la-linkedin la-lg
 
   - title: andyguo0228@gmail.com
     url: mailto:andyguo0228@gmail.com
-    icon: fa-regular fa-envelope
+    icon: las la-envelope la-lg
