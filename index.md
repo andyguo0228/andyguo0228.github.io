@@ -5,7 +5,8 @@ About Me
 --------
 Hi, my name is Andy Guo. I'm a self-taught data analyst and I currently work as a medical scribe at a cancer center. 
 
-In February 2022, I made a life-changing decision—I started learning about data science. It was a daunting experience at first because I've never coded anything before in my life. But I kept at it and the more I learned, the more my curiosity grew. I completed the Google Data Analytics Certificate course and dove headfirst into several other online courses to expand my data toolkit. Throughout this self-guided learning adventure, I discovered a genuine passion for turning raw data into meaningful insights and as my skills grew, so did my desire to apply them in real-world scenarios.
+In February 2022, I made a life-changing decision — I started learning about data science. It was a daunting experience at first because I've never coded anything before in my life. But I kept at it and the more I learned, the more my curiosity grew. I completed the Google Data Analytics Certificate course and dove headfirst into several other online courses to expand my data toolkit. Throughout this self-guided learning adventure, I discovered a genuine passion for turning raw data into meaningful insights and as my skills grew, so did my desire to apply them in real-world scenarios.
+
 
 Below are some of my skills and projects that I've worked on. 
 
