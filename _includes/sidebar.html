@@ -1,7 +1,5 @@
-<section>
 
     <h2>{{site.author}}</h2>
     <h3>{{site.description}}</h3>
-    <a href="/">Home</a>
-
-</section>
+    {% include navlist.html collection=site.data.home.navlist %}
+    {% include hamburger.html collection=site.data.home.navlist %}

@@ -1,21 +1,21 @@
-navbar_entries:
-  - title: home
-    url: index.html
+navlist:
+  - title: About Me
+    url: /
 
-  - title: about
-    url: 
+  - title: Bellabeat Project
+    url: /notebook/bellabeat.html
 
-  - title: website
-    url: 
+  - title: Divvy Bike Project
+    url: /notebook/bike_share_project.html
 
 project_entries:
 
   - title: Bellabeat Project
-    url: notebook/bellabeat.html
+    url: /notebook/bellabeat.html
     desc: Using SQL and Tableau to analyze FitBit data
 
   - title: Divvy Bike Project
-    url: notebook/bike_share_project.html
+    url: /notebook/bike_share_project.html
     desc: Python to analyze Divvy Bike Share data
 
 contact_entries:

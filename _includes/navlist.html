@@ -1,0 +1,9 @@
+<ul class="nav-list">
+    {% for item in include.collection %}
+    <li>
+        <a href="{{item.url}}">
+            {{item.title}}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
