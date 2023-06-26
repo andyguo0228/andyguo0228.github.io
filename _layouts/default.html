@@ -10,7 +10,7 @@
             {% include sidebar.html collection=site.data.home.side %}
             {% endif %}
         </header>
-        <section>
+   
         <div class="content">
             {{ content }}
 
@@ -20,7 +20,7 @@
             {% include cardlist.html collection=site.data.home.project_entries %}
             {% endif %}
         </div>
-        </section>
+     
         <footer>
             {% if site.theme_config.show_contact == true %}
             {% include contact.html collection=site.data.home.contact_entries %}
