@@ -7,7 +7,8 @@ html {
     opacity: 1;
 }
 
-h2, h3 {
+h2,
+h3 {
     line-height: 1;
 }
 
@@ -40,9 +41,15 @@ header h2 {
     line-height: 0.5;
 }
 
+header ul.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
 .name {
     padding-top: 20px;
 }
+
 .name h1 {
     font-size: 2em;
     margin: 0;
@@ -104,18 +111,18 @@ ul.horizontal-list {
     margin-top: 0em;
     margin-left: -40px;
     flex-wrap: wrap;
-  
+
     li {
-      display:inline;
-      margin-right: 1em;
+        display: inline;
+        margin-right: 1em;
     }
-  
+
     li a {
-      text-decoration: none;
-      font-weight: normal
+        text-decoration: none;
+        font-weight: normal
     }
-  
-  }
+
+}
 
 .card {
     padding: 1em;
@@ -132,58 +139,66 @@ ul.horizontal-list {
     .header {
         color: #6a8c52;
     }
-    
+
     .body {
         font-size: 0.8em;
         color: #3c403b;
     }
-    
+
     hr {
         margin: 0.5em 0;
     }
 }
 
 /* highlighter */
-pre, code {
+pre,
+code {
     font-family: "Roboto Mono", "Courier New", monospace;
     font-size: 0.9rem;
     white-space: pre-wrap;
-  }
+}
 
-  div.highlighter-rouge pre code, pre code.highlighter-rouge {
+div.highlighter-rouge pre code,
+pre code.highlighter-rouge {
     display: block;
     overflow-x: auto;
     padding: 1em;
-  }
-  
-  blockquote {
+}
+
+blockquote {
     font-style: italic;
     border: thin solid black;
     padding: 1em;
-  
-    p { margin: 0; }
-  }
 
-  .highlight, pre code, blockquote {
+    p {
+        margin: 0;
+    }
+}
+
+.highlight,
+pre code,
+blockquote {
     border-radius: 0.5em;
-  }
+}
 
-  /* Image Container */
-  .image-container {
+/* Image Container */
+.image-container {
     position: relative;
 
-  }
-  
-  .small-image {
-    width: 600px; /* Set the initial smaller size */
+}
+
+.small-image {
+    width: 600px;
+    /* Set the initial smaller size */
     height: auto;
-    transition: width 0.3s ease; /* Add a smooth transition effect */
+    transition: width 0.3s ease;
+    /* Add a smooth transition effect */
     cursor: pointer;
     border-color: #3c403b;
     border-width: 1px;
-  }
-  
-  .enlarged-image {
+}
+
+.enlarged-image {
     position: fixed;
     top: 0;
     left: 0;
@@ -193,5 +208,75 @@ pre, code {
     z-index: 9999;
     cursor: pointer;
     /* Add any other styles you want for the enlarged image */
-  }
-  
+}
+
+@media (max-width: 960px) {
+    div.container {
+        width: auto;
+        margin: 0
+    }
+
+    header,
+    section,
+    footer {
+        float: none;
+        position: static;
+        width: auto;
+    }
+
+    header {
+        padding-right: 320px
+    }
+
+    section {
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        padding: 20px 0;
+        margin: 0 0 20px
+    }
+
+    header a small {
+        display: inline
+    }
+
+    header ul {
+        position: absolute;
+        right: 50px;
+        top: 52px
+    }
+}
+
+@media (max-width: 720px) {
+    body {
+        word-wrap: break-word
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header ul,
+    header p.view {
+        position: static
+    }
+
+    pre,
+    code {
+        word-wrap: normal
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px
+    }
+
+    .downloads {
+        width: 99%
+    }
+
+    .downloads li,
+    .downloads li+li+li {
+        width: 33%
+    }
+}

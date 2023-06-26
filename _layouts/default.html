@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <style>html{visibility: hidden;opacity:0;}</style>
-    <link rel="stylesheet" href="{{ "/assets/css/line-awesome.css" | relative_url }}">
-    <script src="/assets/js/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="{{ "/assets/css/main.css" | relative_url }}">
-    <title>{{ site.title }}</title>
-</head>
+{% include head.html %}
 
 <body>
     <div class="container">
@@ -16,6 +10,7 @@
             {% include sidebar.html collection=site.data.home.side %}
             {% endif %}
         </header>
+        <section>
         <div class="content">
             {{ content }}
 
@@ -25,6 +20,7 @@
             {% include cardlist.html collection=site.data.home.project_entries %}
             {% endif %}
         </div>
+        </section>
         <footer>
             {% if site.theme_config.show_contact == true %}
             {% include contact.html collection=site.data.home.contact_entries %}
