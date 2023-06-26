@@ -791,19 +791,27 @@ After cleaning the data, I connected the dataset to Tableau to build visualizati
 [https://public.tableau.com/views/bellabeat_dashboard_16815197263150/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/bellabeat_dashboard_16815197263150/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 <br>
 
-![](./images/bellabeat/userdays_bar.png)
+<div class="image-container">
+  <img src="./images/bellabeat/userdays_bar.png" class="small-image" onclick="enlargeImage(this)">
+</div>    
 
 This bar chart illustrates the number of days each user tracked their activity. The majority of users tracked their activity for at least 30 days. Only a subset of 22 users tracked their sleep activity and only 13 users tracked their sleep for more than 15 days.
 
-![](./images/bellabeat/activity_pie.png)
-<br>
-![](./images/bellabeat/activity_scatter.png)
+<div class="image-container">
+  <img src="./images/bellabeat/activity_pie.png" class="small-image" onclick="enlargeImage(this)">
+</div>    
+<div class="image-container">
+  <img src="./images/bellabeat/activity_scatter.png" class="small-image" onclick="enlargeImage(this)">
+</div>    
 
 On average, most users remained sedentary for 81% of the day. The scatterplot demonstrates a positive correlation between the number of steps taken and the number of calories burned. 
 
-![](./images/bellabeat/steps_calorie_line.png)
-<br>
-![](./images/bellabeat/heatmap.png)
+<div class="image-container">
+  <img src="./images/bellabeat/steps_calorie_line.png" class="small-image" onclick="enlargeImage(this)">
+</div>    
+<div class="image-container">
+  <img src="./images/bellabeat/heatmap.png" class="small-image" onclick="enlargeImage(this)">
+</div>    
 
 We found that users are most active between 5PM and 7PM, and least active between 12AM and 5AM. However, on Saturday, there is an increase in user activity between 11AM and 2PM.
 
