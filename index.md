@@ -1,16 +1,23 @@
 ---
 layout: home
 ---
-About Me
+About Me 🙋🏻‍♂️
 --------
 Hi, my name is Andy Guo. I'm a self-taught data analyst and I currently work as a medical scribe at a cancer center. 
 
-In February 2022, I made a life-changing decision — I started learning about data science. It was a daunting experience at first because I've never coded anything before in my life. But I kept at it and the more I learned, the more my curiosity grew. I completed the Google Data Analytics Certificate course and dove headfirst into several other online courses to expand my data toolkit. Throughout this self-guided learning adventure, I discovered a genuine passion for turning raw data into meaningful insights and as my skills grew, so did my desire to apply them in real-world scenarios. 
+Data has always fascinated me, both as a language and as a window into understanding complex systems. For most of my career, I've been deeply involved in healthcare, a field which taught me the importance of precision, attention to detail, and the value of using evidence to make decisions. While I thrived in healthcare, I was always drawn to the underlying data that drove decisions. This curiosity eventually led me on a self-learning journey, where I used a mix of online courses, tutorials, and a whole lot of trial and error to teach myself data science. The experience challenged me in ways I would have never anticipated, but it also pushed me to discover what I'm capable of. All the late nights combing through documentation, every coding syntax I learned, and each dataset I explored, allowed me to build a strong foundation with essential data tools such as SQL, Python, and Tableau. So here I am, a self-taught data analyst with a unique blend of healthcare knowledge and analytical expertise, eager to make a positive impact with his newfound skills.
 
+Some fun facts about me:
+- Passionate about the environment and sustainability 🌎
+- I can't stop listening to NewJeans 👖
+- Big fan of Sumo Citrus and waiting for them to be in season again 🍊
+- I destress by playing Jazz piano 🎹
+- I will never say no to Korean BBQ 🥩 or bubble tea 🧋
+- My spirit animal and favorite Python library is Pandas 🐼
 
-Below are some of my skills and projects that I've worked on. Please feel free to reach out to me if you have any questions or would like to connect.
+Thank you for taking the time to visit by my portfolio. Please feel free to explore my projects to have a better idea of how I approach and solve problems. I'd love to connect and discuss any questions you may have about my work so please don't hesitate to reach out.
 
-Technical Skills
+Technical Skills 💻
 ----------------
 - **Data Analysis**: Proficiency in analyzing large datasets using various statistical methods and techniques to derive insights and support decision-making.
 - **SQL**: Strong command of SQL for data manipulation, extraction, and database management tasks.
@@ -20,7 +27,7 @@ Technical Skills
 - **Data Cleaning and Preprocessing**: Ability to clean and preprocess data, including handling missing values, outliers, and ensuring data quality.
 - **Statistical Analysis**: Familiarity with statistical concepts, hypothesis testing, regression analysis, and other statistical techniques to extract insights from data.
 
-Soft Skills
+Soft Skills 🤝
 -----------
 - **Critical Thinking**: Capacity to evaluate information objectively, consider alternative solutions, and make informed decisions based on evidence.
 - **Problem Solving**: Aptitude for identifying and resolving complex data-related issues by applying analytical techniques and creative thinking.
