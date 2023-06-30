@@ -35,7 +35,7 @@ theme_config:
     title_blog: Blog
     title_old_projects: Old Projects
 
-
+markdown: kramdown
 highlighter: rouge
 
 sass:
@@ -44,3 +44,4 @@ sass:
 plugins:
   - jekyll-seo-tag
   - jemoji
+  - jekyll-spaceship
