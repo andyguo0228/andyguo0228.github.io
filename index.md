@@ -10,7 +10,12 @@ Data has always fascinated me, both as a language and as a window into understan
 
 
 
-For most of my career, I've been working in healthcare and while I found it meaningful, I was always drawn to the underlying data that drove decisions. I was fascinated by the idea of transforming complex and confusing data into something digestible, relatable, and actionable which could improve patient care and quality of life. This eventually led me to start my jouney to teach myself data science and work on personal projects to hone my skills in SQL, Python, and Tableau. 
+For most of my career, I've been working in healthcare and while I found it meaningful, I was always drawn to the underlying data that drove decisions. I was fascinated by the idea of transforming complex data into something easy to digest and actionable which could improve patient care and quality of life. This eventually led me to start my jouney to teach myself data science using online courses and videos. The experience was challenging to say the least. I had no computer science experience and had never written a single line of code before. I was confused and had no idea what I was doing, and I loved every minute of it. 
+
+
+
+
+and work on personal projects to hone my skills in SQL, Python, and Tableau. 
 
 
 
