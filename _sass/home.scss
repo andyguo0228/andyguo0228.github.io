@@ -62,6 +62,10 @@ header ul.nav-list {
     margin: 50px auto;
 }
 
+.foot {
+    text-align:center;
+}
+
 
 footer {
     width: 270px;
@@ -213,6 +217,8 @@ blockquote {
     display: none;
 }
 
+
+
 @media (max-width: 960px) {
     .container {
         width: auto;
@@ -283,6 +289,7 @@ blockquote {
     }
     
     .p-menu1{
+        display: block;
         height: 100%;
     }
     
