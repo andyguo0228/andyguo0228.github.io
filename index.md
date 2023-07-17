@@ -3,9 +3,9 @@ layout: home
 ---
 About Me 🙋🏻‍♂️
 --------
-Hi, my name is Andy Guo. I'm a self-taught data analyst and I currently work as a medical scribe at a cancer center. 
+Hi, I'm Andy Guo and this is my portfolio. I'm a self-taught data professional and I currently work as a medical scribe at a cancer center.
 
-Data has always fascinated me, both as a language and as a window into understanding complex systems. For most of my career, I've been deeply involved in healthcare, a field which taught me the importance of precision, attention to detail, and the value of using evidence to make decisions. While I thrived in healthcare, I was always drawn to the underlying data that drove decisions. This curiosity eventually led me on a self-learning journey, where I used a mix of online courses, tutorials, and a whole lot of trial and error to teach myself data science. The experience challenged me in ways I would have never anticipated, but it also pushed me to discover what I'm capable of. All the late nights combing through documentation, every coding syntax I learned, and each dataset I explored, allowed me to build a strong foundation with essential data tools such as SQL, Python, and Tableau. So here I am, a self-taught data analyst with a unique blend of healthcare knowledge and analytical expertise, eager to make a positive impact with his newfound skills.
+For most of my career, I've been working in healthcare and while I found it meaningful, I was always drawn to the underlying data that drove decisions. I was fascinated by the idea of transforming complex data into something easy to digest and actionable which could improve patient care and quality of life. This eventually led me to start my jouney to teach myself data science using online courses and videos. The experience was challenging to say the least. I had no computer science experience and had never written a single line of code before. It was a struggle and most of the time I had no idea what I was doing, but I loved every minute of it. I literally started from the bottom and now I'm here with examples of my work in this portfolio demonstrating my capabilities and enthusiasm for data science. 
 
 Some fun facts about me:
 - Passionate about the environment and sustainability 🌎
@@ -34,7 +34,3 @@ Soft Skills 🤝
 - **Attention to Detail**: Strong focus on accuracy and precision when working with data, ensuring that analyses and reports are error-free.
 - **Collaboration**: Ability to work well in a team environment, collaborating with colleagues from diverse backgrounds and contributing to shared goals.
 - **Adaptability**: Flexibility to adjust and thrive in a dynamic and fast-paced work environment, embracing new technologies and approaches.
-
-<!--
-and ever since I wrote my first SQL query, I've been captivated  everything related to data and coding. Nothing gets me more excited than a messy dataset, just waiting for someone to uncover it's hidden insights. Much like cleaning at home, I find cleaning data to be very therapeutic and satisfying. 
--->
