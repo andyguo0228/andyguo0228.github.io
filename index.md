@@ -21,8 +21,8 @@ Technical Skills 💻
 ----------------
 - **Data Analysis**: Proficiency in analyzing large datasets using various statistical methods and techniques to derive insights and support decision-making.
 - **SQL**: Strong command of SQL for data manipulation, extraction, and database management tasks.
-- **Programming Languages**: Experience in languages such as Python and R for data manipulation, statistical analysis, and automation of data processes.
-- **Data Visualization**: Skill in creating visually appealing and informative data visualizations using tools like Tableau, Power BI, or matplotlib in Python.
+- **Programming Languages**: Experience with Python for data manipulation, statistical analysis, and creating visualizations. 
+- **Data Visualization**: Skill in creating visually appealing and informative data visualizations using tools like Tableau or matplotlib in Python.
 - **Excel**: Proficiency in utilizing Excel for data cleaning, data transformation, formula-based calculations, and generating reports and dashboards.
 - **Data Cleaning and Preprocessing**: Ability to clean and preprocess data, including handling missing values, outliers, and ensuring data quality.
 - **Statistical Analysis**: Familiarity with statistical concepts, hypothesis testing, regression analysis, and other statistical techniques to extract insights from data.
