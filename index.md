@@ -5,7 +5,7 @@ About Me 🙋🏻‍♂️
 --------
 Hi, I'm Andy Guo and this is my portfolio. I'm a self-taught data professional and I currently work as a medical scribe at a cancer center.
 
-For most of my career, I've been working in healthcare and while I found it meaningful, I was always drawn to the underlying data that drove decisions. I was fascinated by the idea of transforming complex data into something easy to digest and actionable which could improve patient care and quality of life. This eventually led me to start my jouney to teach myself data science using online courses and videos. The experience was challenging to say the least. I had no computer science experience and had never written a single line of code before. It was a struggle and most of the time I had no idea what I was doing, but I loved every minute of it. I literally started from the bottom and now I'm here with examples of my work in this portfolio demonstrating my capabilities and enthusiasm for data science. 
+For most of my career, I've been working in healthcare and while I found it meaningful, I was always drawn to the underlying data that drove decisions. I was fascinated by the idea of transforming complex data into something easy to digest and actionable which could improve patient care and quality of life. This eventually led me to start my journey to teach myself data science using online courses and videos. It was challenging to say the least as I had no computer science background and had never written a single line of code before. I struggled, I persevered, and now I have a portfolio demonstrating my skills and passion for data science. 
 
 Some fun facts about me:
 - Passionate about the environment and sustainability 🌎
@@ -19,11 +19,11 @@ Thank you for taking the time to visit by my portfolio. Please feel free to expl
 
 Technical Skills 💻
 ----------------
-- **Data Analysis**: Proficiency in analyzing large datasets using various statistical methods and techniques to derive insights and support decision-making.
+- **Data Analysis**: Proficiency in analyzing large datasets using various statistical methods and techniques to derive insights for decision-making.
 - **SQL**: Strong command of SQL for data manipulation, extraction, and database management tasks.
-- **Programming Languages**: Experience with Python for data manipulation, statistical analysis, and creating visualizations. 
-- **Data Visualization**: Skill in creating visually appealing and informative data visualizations using tools like Tableau or matplotlib in Python.
-- **Excel**: Proficiency in utilizing Excel for data cleaning, data transformation, formula-based calculations, and generating reports and dashboards.
+- **Programming Languages**: Experience with Python for exploratory data analysis and data visualizations.
+- **Data Visualization**: Skill in creating visually appealing and informative data visualizations using Tableau.
+- **Excel**: Proficiency in utilizing Excel for data cleaning, data transformation, and formula-based calculations.
 - **Data Cleaning and Preprocessing**: Ability to clean and preprocess data, including handling missing values, outliers, and ensuring data quality.
 - **Statistical Analysis**: Familiarity with statistical concepts, hypothesis testing, regression analysis, and other statistical techniques to extract insights from data.
 
