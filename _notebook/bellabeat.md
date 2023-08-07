@@ -149,7 +149,7 @@ The following tables remained in the database:
 * `hourlydata`
 * `sleepday`
 
-```python
+```sql
 %%sql
 -- Verify tables in database
 SELECT table_name
