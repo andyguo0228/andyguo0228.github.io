@@ -107,6 +107,26 @@ footer a {
     background-color: #ddd;
 }
 
+// NOTEBOOK TABLES
+/* Style the table itself */
+table {
+    border-collapse: collapse; /* Ensures borders don't double up */
+}
+
+th {
+    border-bottom: 2px solid #000; /* Solid black border */
+    padding: 6px;
+    text-align:left;
+}
+
+/* Style the table cells (both header and data cells) */
+td {
+    border-bottom: 1px solid #000; /* Solid black border */
+    padding: 8px; /* Space inside each cell */
+    text-align: left; /* Align content to the left */
+}
+
+
 /* Project Cards */
 
 ul.horizontal-list {

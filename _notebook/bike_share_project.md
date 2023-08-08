@@ -1,9 +1,9 @@
 ---
 layout: notebook
-title: Divvy Bike Share Project Remake
+title: Divvy Bike Share Project 🚲
 ---
 
-This is my Divvy Bike Project Remake. I completed this project a year ago using R for my Google Data Analytics Certificate. I've learned a lot since then and wanted to see if I could improve upon my prior work as well as demonstrate my ability to analyze data and build visualizations. I'll be using Python for this project because I love pandas 🐼
+This is my Divvy Bike Share Project Remake. I completed this project a year ago using R for my Google Data Analytics Certificate. I've learned a lot since then and wanted to see if I could improve upon my prior work as well as demonstrate my ability to analyze data and build visualizations. I'll be using Python for this project because I love pandas 🐼
 
 Here is a link to my original project using R: [https://rpubs.com/Peachtaco/bike_share_analysis](https://rpubs.com/Peachtaco/bike_share_analysis)
 
@@ -382,80 +382,63 @@ top_stations.groupby('name')[['lat', 'lon']].nunique().sort_values(by='lat', asc
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table>
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>lat</th>
-      <th>lon</th>
-    </tr>
     <tr>
       <th>name</th>
-      <th></th>
-      <th></th>
+      <th>lat</th>
+      <th>lon</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Clinton St &amp; Madison St</th>
+      <td>Clinton St &amp; Madison St</td>
       <td>7507</td>
       <td>7478</td>
     </tr>
     <tr>
-      <th>Clinton St &amp; Washington Blvd</th>
+      <td>Clinton St &amp; Washington Blvd</td>
       <td>6212</td>
       <td>6355</td>
     </tr>
     <tr>
-      <th>Franklin St &amp; Monroe St</th>
+      <td>Franklin St &amp; Monroe St</td>
       <td>6109</td>
       <td>6126</td>
     </tr>
     <tr>
-      <th>St. Clair St &amp; Erie St</th>
+      <td>St. Clair St &amp; Erie St</td>
       <td>5760</td>
       <td>6046</td>
     </tr>
     <tr>
-      <th>Wells St &amp; Elm St</th>
+      <td>Wells St &amp; Elm St</td>
       <td>5541</td>
       <td>5233</td>
     </tr>
     <tr>
-      <th>Wabash Ave &amp; Grand Ave</th>
+      <td>Wabash Ave &amp; Grand Ave</td>
       <td>5527</td>
       <td>5761</td>
     </tr>
     <tr>
-      <th>Clark St &amp; Elm St</th>
+      <td>Clark St &amp; Elm St</td>
       <td>5478</td>
       <td>5391</td>
     </tr>
     <tr>
-      <th>McClurg Ct &amp; Ohio St</th>
+      <td>McClurg Ct &amp; Ohio St</td>
       <td>5469</td>
       <td>5223</td>
     </tr>
     <tr>
-      <th>Canal St &amp; Adams St</th>
+      <td>Canal St &amp; Adams St</td>
       <td>5424</td>
       <td>5947</td>
     </tr>
     <tr>
-      <th>Orleans St &amp; Merchandise Mart Plaza</th>
+      <td>Orleans St &amp; Merchandise Mart Plaza</td>
       <td>5397</td>
       <td>5600</td>
     </tr>
@@ -489,22 +472,10 @@ top_station
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<table>
   <thead>
-    <tr style="text-align: right;">
+    <tr>
       <th></th>
       <th>name</th>
       <th>Count</th>
@@ -514,70 +485,70 @@ top_station
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
+      <td>0</td>
       <td>Streeter Dr &amp; Grand Ave</td>
       <td>70837</td>
       <td>41.892278</td>
       <td>-87.612043</td>
     </tr>
     <tr>
-      <th>1</th>
+      <td>1</td>
       <td>DuSable Lake Shore Dr &amp; Monroe St</td>
       <td>39347</td>
       <td>41.880958</td>
       <td>-87.616743</td>
     </tr>
     <tr>
-      <th>2</th>
+      <td>2</td>
       <td>Michigan Ave &amp; Oak St</td>
       <td>37817</td>
       <td>41.900960</td>
       <td>-87.623777</td>
     </tr>
     <tr>
-      <th>3</th>
+      <td>3</td>
       <td>DuSable Lake Shore Dr &amp; North Blvd</td>
       <td>37749</td>
       <td>41.911722</td>
       <td>-87.626804</td>
     </tr>
     <tr>
-      <th>4</th>
+      <td>4</td>
       <td>Wells St &amp; Concord Ln</td>
       <td>35301</td>
       <td>41.912133</td>
       <td>-87.634656</td>
     </tr>
     <tr>
-      <th>5</th>
+      <td>5</td>
       <td>Clark St &amp; Elm St</td>
       <td>33704</td>
       <td>41.902973</td>
       <td>-87.631280</td>
     </tr>
     <tr>
-      <th>6</th>
+      <td>6</td>
       <td>Millennium Park</td>
       <td>32824</td>
       <td>41.881032</td>
       <td>-87.624084</td>
     </tr>
     <tr>
-      <th>7</th>
+      <td>7</td>
       <td>Kingsbury St &amp; Kinzie St</td>
       <td>32319</td>
       <td>41.889177</td>
       <td>-87.638506</td>
     </tr>
     <tr>
-      <th>8</th>
+      <td>8</td>
       <td>Theater on the Lake</td>
       <td>31559</td>
       <td>41.926277</td>
       <td>-87.630834</td>
     </tr>
     <tr>
-      <th>9</th>
+      <td>9</td>
       <td>Wells St &amp; Elm St</td>
       <td>29649</td>
       <td>41.903222</td>

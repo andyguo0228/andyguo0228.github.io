@@ -1,16 +1,13 @@
 ---
 layout: notebook
-title: Bellabeat Project
+title: Bellabeat Fitness Tracker Project 🏃‍♂️
 ---
-
-
-# Introduction
 This is the capestone project for the Google data analytics certificate. I'll be conducting an in-depth case study on Bellabeat, a high-tech manufacturer of health-focused products for women. My focus will be on analyzing smart device data to gain valuable insights into consumer usage patterns, which will enable me to provide data-driven recommendations for optimizing Bellabeat's marketing strategy. Although I will be using Python to prepare the data, my aim is to demonstrate my proficiency in utilizing SQL and Tableau.
 
 # Background
 Bellabeat was founded in 2013 by Urška Sršen and Sando Mur with the goal of developing beautifully designed technology that would inform and inspire women. The technology would collect data on activity, sleep, stress, and reproductive health to empower women with knowledge about their own health.
 
-Bellabeat products are available at a number of online retailers in addition to their website. The company has invested in traditional advertising media such as radio, billboards, print, and television, but focuses on digital marketing extensively. They have ads on Youtube and Google, and are active on multiple social media platforms including Facebook, Instagram, and Twitter.
+Bellabeat products are available at several retailers in addition to their website. The company has invested in traditional advertising media such as radio, billboards, print, and television, but focuses on digital marketing extensively. They have ads on Youtube and Google, and are active on multiple social media platforms including Facebook, Instagram, and Twitter.
 
 **Bellabeat Products**
 - Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
@@ -157,7 +154,7 @@ FROM information_schema.tables
 WHERE table_schema = 'public';
 ```
 
-    18 rows affected.
+    18 rows affected.hi
 
 
 
