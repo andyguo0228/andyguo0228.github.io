@@ -25,11 +25,9 @@ Analyze smart device data to gain insight on how consumers use smart devices and
 - How could these trends apply to Bellabeat customers?
 - How could these trends help influence Bellabeat marketing strategy?
 
-
-
 ### Prepare Data
 
-The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and contained FitBit tracker data from 33 users. There were 18 CSV files, each file containing a table varying in number of columns and content. I created a data dictionary to help me understand the data and determine which tables to use for my analysis. I would normally import only the tables I need, but for the purpose of this project I imported all CSV files into my PostgreSQL database to demonstrate my proficiency with SQL.
+The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and contained FitBit tracker data from 33 users. There were 18 CSV files, each file containing a table varying in number of columns and content. I created a data dictionary to help me understand the data and determine which tables to use for my analysis. 
 
 ```python
 #Setup Environment
