@@ -7,15 +7,15 @@ Hi, I'm Andy Guo and this is my portfolio. I'm a self-taught data professional a
 
 For most of my career, I've been working in healthcare and while I found it meaningful, I was always drawn to the underlying data that drove decisions. I was fascinated by the idea of transforming complex data into something easy to digest and actionable which could improve patient care and quality of life. This eventually led me to start my journey to teach myself data science using online courses and videos. It was challenging to say the least as I had no computer science background and had never written a single line of code before. I struggled, I persevered, and now I have a portfolio demonstrating my skills and passion for data science. 
 
+I’m excited to present the projects that I’ve worked on. Please feel free to reach out if you’d like to connect or to discuss any questions you may have about my work. Thanks for visiting! 😊
+
 Some fun facts about me:
 - Passionate about the environment and sustainability 🌎
 - I can't stop listening to NewJeans 👖
 - Big fan of Sumo Citrus and waiting for them to be in season again 🍊
-- I destress by playing Jazz piano 🎹
+- I destress by playing jazz piano 🎹
 - I will never say no to Korean BBQ 🥩 or bubble tea 🧋
 - My spirit animal and favorite Python library is Pandas 🐼
-
-Thank you for taking the time to visit by my portfolio. Please feel free to explore my projects to have a better idea of how I approach and solve problems. I'd love to connect and discuss any questions you may have about my work so please don't hesitate to reach out.
 
 Technical Skills 💻
 ----------------
@@ -24,7 +24,6 @@ Technical Skills 💻
 - **Programming Languages**: Experience with Python for exploratory data analysis and data visualizations.
 - **Data Visualization**: Skill in creating visually appealing and informative data visualizations using Tableau.
 - **Excel**: Proficiency in utilizing Excel for data cleaning, data transformation, and formula-based calculations.
-- **Data Cleaning and Preprocessing**: Ability to clean and preprocess data, including handling missing values, outliers, and ensuring data quality.
 - **Statistical Analysis**: Familiarity with statistical concepts, hypothesis testing, regression analysis, and other statistical techniques to extract insights from data.
 
 Soft Skills 🤝
