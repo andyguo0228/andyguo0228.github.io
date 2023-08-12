@@ -7,10 +7,19 @@
             <div class="bottom"></div>
         </label>
 
-        <nav class="menu1">
+        <!-- <nav class="menu1">
             <a class="link1" href="/">About Me</a>
             <a class="link1" href="/_notebook/bellabeat.html">Bellabeat Project</a>
             <a class="link1" href="/notebook/bike_share_project.html">Divvy Bike Project</a>
-        </nav>
+        </nav> -->
+        <ul class="menu1">
+            {% for item in include.collection %}
+            <li>
+                <a class="link1" href="{{item.url}}">
+                    {{item.title}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
     </nav>
 </section>

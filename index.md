@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 ---
 About Me 🙋🏻‍♂️
 --------
@@ -11,7 +11,7 @@ I’m excited to present the projects that I’ve worked on. Please feel free to
 
 Some fun facts about me:
 - Passionate about the environment and sustainability 🌎
-- I can't stop listening to NewJeans 👖
+- Most listened to artist: NewJeans 👖
 - Big fan of Sumo Citrus and waiting for them to be in season again 🍊
 - I destress by playing jazz piano 🎹
 - I will never say no to Korean BBQ 🥩 or bubble tea 🧋
