@@ -152,7 +152,7 @@ FROM information_schema.tables
 WHERE table_schema = 'public';
 ```
 
-    18 rows affected.hi
+    18 rows affected.
 
 
 
