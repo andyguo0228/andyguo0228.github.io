@@ -8,6 +8,9 @@ navlist:
   - title: Divvy Bike Project
     url: /notebook/bike_share_project.html
 
+  - title: Maven Healthcare
+    url: /notebook/maven_health.html
+
 project_entries:
 
   - title: Bellabeat Project
@@ -17,6 +20,10 @@ project_entries:
   - title: Divvy Bike Project
     url: /notebook/bike_share_project.html
     desc: Python to analyze Divvy Bike Share data
+
+  - title: Maven Healthcare
+    url: /notebook/maven_health.html
+    desc: Analyze healthcare data to improve patient experience
 
 contact_entries:
 
