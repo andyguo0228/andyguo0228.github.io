@@ -32,7 +32,6 @@ header {
     width: 270px;
     position: fixed;
     float: left;
-    margin: 50px;
 }
 
 header a {
@@ -77,7 +76,6 @@ footer {
     position: fixed;
     float: left;
     bottom: 50px;
-    margin: 50px;
 }
 
 footer ul.contact-list {
@@ -93,8 +91,7 @@ footer a {
 }
 
 .content {
-    width: 600px;
-    margin: 50px;
+    width: 700px;
     float: right;
 }
 
@@ -245,15 +242,25 @@ blockquote {
 }
 
 .enlarged-image {
-    top: 0;
-    left: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: auto;
     height: auto;
     object-fit: contain;
     z-index: 9999;
     cursor: pointer;
-    /* Add any other styles you want for the enlarged image */
+    border: solid;
+    border-color: #3c403b;
+    border-width: 0.5px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+
 
 .p-menu1 {
     display: none;
@@ -436,6 +443,37 @@ blockquote {
         color: rgb(61, 61, 61);
         -webkit-transition: all 0.3s ease;
         transition: all 0.3s ease;
+    }
+
+        /* Image Container */
+    .image-container {
+        position: relative;
+
+    }
+
+    .small-image {
+        width: 100%;
+        /* Set the initial smaller size */
+        height: auto;
+        transition: width 0.3s ease;
+        /* Add a smooth transition effect */
+        cursor: pointer;
+        border: solid;
+        border-color: #3c403b;
+        border-width: 0.5px;
+    }
+
+    .enlarged-image {
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        z-index: 9999;
+        cursor: pointer;
+        transform: none;
+        position: static;
+        /* Add any other styles you want for the enlarged image */
     }
 }
 
