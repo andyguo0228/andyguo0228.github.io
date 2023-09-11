@@ -124,14 +124,14 @@ thead, tbody, tfoot {
     box-sizing: border-box;
 }
 
-th {
+thead th {
     border-bottom: 2px solid #000; /* Solid black border */
     padding: 6px;
     text-align:left;
 }
 
 /* Style the table cells (both header and data cells) */
-td {
+td, th {
     border-bottom: 1px solid #000; /* Solid black border */
     padding: 8px; /* Space inside each cell */
     text-align: left; /* Align content to the left */

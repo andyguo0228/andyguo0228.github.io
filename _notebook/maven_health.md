@@ -405,7 +405,6 @@ responses
 
 
 <div>
-</style>
 <table>
   <thead>
     <tr>
