@@ -8,9 +8,7 @@ Hi, I'm Andy Guo and this is my portfolio. I'm a self-taught data analyst and I 
 For most of my career, I've been working in healthcare and while I found it meaningful, I was always drawn to the underlying data that drove decisions. I was fascinated by the idea of transforming complex data into something easy to digest and actionable which could improve patient care and quality of life. This eventually led me to start my journey to teach myself data analytics using online resources. With no formal background in computer science, it was a steep road learning to code from scratch and understand complex data concepts. However, through determination and resilience, I cultivated a skill set that I am eager to showcase through my portfolio.
 
 Today, I'm proud to share my projects that not only demonstrates my technical skills but also my passion for data analytics. Each project is a chapter in my ongoing narrative of learning and growth in this dynamic field.
-I invite you to take a look at my work and should you have any questions or would like to connect, please don't hesitate to reach out. 
-
-Thanks for stopping by and sharing a slice of your day with me! 😊
+I invite you to take a look at my work and if you have any questions or would like to connect, please don't hesitate to reach out.
 
 Some fun facts about me:
 - Passionate about the environment and sustainability 🌎
