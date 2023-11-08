@@ -1,0 +1,40 @@
+navlist:
+  - title: About Me
+    url: /
+
+  - title: Bellabeat Project
+    url: /notebook/bellabeat.html
+
+  - title: Divvy Bike Project
+    url: /notebook/bike_share_project.html
+
+  - title: Maven Healthcare
+    url: /notebook/maven_health.html
+
+project_entries:
+
+  - title: Bellabeat Project
+    url: /notebook/bellabeat.html
+    desc: Using SQL and Tableau to analyze FitBit data
+
+  - title: Divvy Bike Project
+    url: /notebook/bike_share_project.html
+    desc: Python to analyze Divvy Bike Share data
+
+  - title: Maven Healthcare
+    url: /notebook/maven_health.html
+    desc: Analyze healthcare data to improve patient experience
+
+contact_entries:
+
+  - title: Github
+    url: https://github.com/andyguo0228
+    icon: lab la-github la-lg
+
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/andyguo1/
+    icon: lab la-linkedin la-lg
+
+  - title: andyguo0228@gmail.com
+    url: mailto:andyguo0228@gmail.com
+    icon: las la-envelope la-lg

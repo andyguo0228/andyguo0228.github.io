@@ -1,0 +1,4 @@
+{
+    "livePreview.defaultPreviewPath": "/_site/index.html",
+    "liquid.format.enable": true
+}

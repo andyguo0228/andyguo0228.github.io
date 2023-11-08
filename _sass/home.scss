@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+    color: #3c403b;
+    visibility: visible;
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #6a8c52;
+}
+
+h2,
+h3 {
+    line-height: 1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #3c403b;
+    background-color: #fdf5ed;
+    font-family: "Inter", -apple-system, "avenir next", avenir, roboto, noto, ubuntu, "helvetica neue", helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2;
+    margin: 0;
+}
+
+header {
+    width: 270px;
+    position: fixed;
+    float: left;
+}
+
+header a {
+    text-decoration: none;
+    color: #6a8c52;
+    text-align: left;
+    line-height: 30px;
+}
+
+header h2 {
+    line-height: 0.5;
+}
+
+header ul.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.name {
+    padding-top: 20px;
+}
+
+.name h1 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 960px;
+    margin: 50px auto;
+}
+
+.foot {
+    text-align:center;
+}
+
+
+footer {
+    width: 270px;
+    position: fixed;
+    float: left;
+    bottom: 50px;
+}
+
+footer ul.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #6a8c52;
+    text-align: left;
+    line-height: 30px;
+}
+
+.content {
+    width: 700px;
+    float: right;
+}
+
+/* CSS for navigation links */
+.nav a {
+    width: 90%;
+    height: 200px;
+    text-decoration: none;
+    color: #333;
+    margin: 10px;
+    background-color: red;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+}
+
+// NOTEBOOK TABLES
+/* Style the table itself */
+table {
+    display: block;
+    border-collapse: collapse; /* Ensures borders don't double up */
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: auto;
+}
+
+thead, tbody, tfoot {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+thead th {
+    border-bottom: 2px solid #000; /* Solid black border */
+    padding: 6px;
+    text-align:left;
+}
+
+/* Style the table cells (both header and data cells) */
+td, th {
+    border-bottom: 1px solid #000; /* Solid black border */
+    padding: 8px; /* Space inside each cell */
+    text-align: left; /* Align content to the left */
+}
+
+
+/* Project Cards */
+
+ul.horizontal-list {
+    display: flex;
+    margin-top: 0em;
+    margin-left: -40px;
+    flex-wrap: wrap;
+
+    li {
+        display: inline;
+        margin-right: 1em;
+    }
+
+    li a {
+        text-decoration: none;
+        font-weight: normal
+    }
+
+}
+
+.card {
+    padding: 1em;
+    border: 1px solid;
+    width: 11em;
+    height: auto;
+    text-align: center;
+    font-size: 1em;
+    align-items: center;
+    background-color: #e4dccb;
+    margin-bottom: 0.8em;
+    border-radius: 0.5em;
+
+    .header {
+        color: #6a8c52;
+    }
+
+    .body {
+        font-size: 0.8em;
+        color: #3c403b;
+    }
+
+    hr {
+        margin: 0.5em 0;
+    }
+}
+
+/* highlighter */
+pre,
+code {
+    font-family: "Roboto Mono", "Courier New", monospace;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+}
+
+div.highlighter-rouge pre code,
+pre code.highlighter-rouge {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+}
+
+code.language-plaintext.highlighter-rouge {
+    color: #6a8c52;
+    border: solid;
+    border-width: 0.5px;
+    padding: 0 5px;
+}
+
+blockquote {
+    font-style: italic;
+    border: thin solid black;
+    padding: 1em;
+
+    p {
+        margin: 0;
+    }
+}
+
+.highlight,
+pre code,
+blockquote {
+    border-radius: 0.5em;
+}
+
+
+/* Image Container */
+.image-container {
+    position: relative;
+
+}
+
+.small-image {
+    width: 100%;
+    /* Set the initial smaller size */
+    height: auto;
+    transition: width 0.3s ease;
+    /* Add a smooth transition effect */
+    cursor: pointer;
+    border: solid;
+    border-color: #3c403b;
+    border-width: 0.5px;
+}
+
+.enlarged-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    z-index: 9999;
+    cursor: pointer;
+    border: solid;
+    border-color: #3c403b;
+    border-width: 0.5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+.p-menu1 {
+    display: none;
+}
+
+// Scroll to top button  
+#scrollToTop {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000; 
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid;
+    border-width: 0.5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center
+}
+  
+
+@media (max-width: 960px) {
+    .container {
+        width: auto;
+        margin: 0
+    }
+
+    header,
+    section,
+    footer {
+        float: none;
+        position: static;
+        width: auto;
+        margin: 0;
+    }
+
+    header {
+        padding-right: 320px
+    }
+
+    .content {
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        padding: 20px 0;
+        margin: 0 0 20px;
+        width: 100%
+    }
+
+    header a small {
+        display: inline
+    }
+
+    h2, 
+    h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    header ul.nav-list {
+        display: none;
+
+    }
+
+    .horizontal-list {
+        justify-content: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+        /*               HAMBURGER              */
+    /* html {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    } */
+
+    /* body {
+    margin: 20px 0;
+    overflow: auto;
+    
+    color: #fff;
+    } */
+
+    a {
+        color: #6a8c52;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .p-menu1{
+        display: block;
+        height: 100%;
+    }
+    
+    
+    
+    /* Hamburger */
+    .hamburger1 {
+        height: 45px;
+        margin: 10px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        z-index: 120;
+    }
+    
+    .hamburger1 div {
+        background-color: rgb(61, 61, 61);
+        position: relative;
+        width: 40px;
+        height: 5px;
+        margin-top: 7px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    #toggle1 {
+        display: none;
+    }
+    
+    #toggle1:checked + .hamburger1 .top {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-top: 22.5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .meat {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        margin-top: -5px;
+    }
+    
+    #toggle1:checked + .hamburger1 .bottom {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    
+    #toggle1:checked ~ .menu1 {
+        height: auto;
+    }
+    
+    
+    /* Menu */
+    .menu1 {
+        width: 100%;
+        background-color: #fdf5ed;
+        margin: 0;
+        display: -ms-grid;
+        display: grid;
+        padding: 0;
+        list-style: none;
+        clear: both;
+        width: auto;
+        text-align: center;
+        height: 0px;
+        overflow: hidden;
+        transition: height .4s ease;
+        z-index: 120;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    
+    
+    .link1 {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        font: 700 20px 'Oswald', sans-serif;
+        text-align: center;
+    }
+    
+    .link1:hover {
+        background-color: #fff;
+        color: rgb(61, 61, 61);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+
+        /* Image Container */
+    .image-container {
+        position: relative;
+
+    }
+
+    .small-image {
+        width: 100%;
+        /* Set the initial smaller size */
+        height: auto;
+        transition: width 0.3s ease;
+        /* Add a smooth transition effect */
+        cursor: pointer;
+        border: solid;
+        border-color: #3c403b;
+        border-width: 0.5px;
+    }
+
+    .enlarged-image {
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        z-index: 9999;
+        cursor: pointer;
+        transform: none;
+        position: static;
+        /* Add any other styles you want for the enlarged image */
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        word-wrap: break-word
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header ul,
+    header p.view {
+        position: static
+    }
+
+    pre,
+    code {
+        word-wrap: normal
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 15px
+    }
+
+    .downloads {
+        width: 99%
+    }
+
+    .downloads li,
+    .downloads li+li+li {
+        width: 33%
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+    <div class="container">
+        <header>
+            {% if site.theme_config.show_sidebar == true %}
+            {% include sidebar.html collection=site.data.home.side %}
+            {% endif %}
+        </header>
+   
+        <div class="content">
+            {{ content }}
+
+            <!-----------Project List----------------->
+            {% if site.theme_config.show_projects == true %}
+            <h2>{{ site.theme_config.home.title_projects }}</h2>
+            {% include cardlist.html collection=site.data.home.project_entries %}
+            {% endif %}
+            <button id="scrollToTop" onclick="scrollToTopFunction()">🔝</button>
+        </div>
+     
+        <footer>
+            {% if site.theme_config.show_contact == true %}
+            {% include contact.html collection=site.data.home.contact_entries %}
+            {% endif %}
+        </footer>
+    </div>
+</body>
+
+</html>
