@@ -2,21 +2,19 @@
 layout: notebook
 title: Bellabeat Fitness Tracker Project 🏃‍♂️
 ---
-This is the capestone project for the Google data analytics certificate. I'll be conducting an in-depth case study on Bellabeat, a high-tech manufacturer of health-focused products for women. My focus will be on analyzing smart device data to gain valuable insights into consumer usage patterns, which will enable me to provide data-driven recommendations for optimizing Bellabeat's marketing strategy. I deployed an AWS database, used Python to connect and import the data, SQL to clean and process the data, and Tableau to visualize the data. 
-
-Although I will be using Python to prepare the data, my aim is to demonstrate my proficiency in utilizing SQL and Tableau.
+This is my data analysis project for Bellabeat, a women's health tech company. The project utilizes Python, SQL, and Tableau to analyze user smart device data, aiming to uncover insights for optimizing Bellabeat's marketing strategy. It encompasses data preparation in PostgreSQL, thorough data cleaning, and detailed analysis, with the goal of providing actionable recommendations to enhance Bellabeat's engagement with its target audience and improve its digital marketing efforts.
 
 # Background
 Bellabeat was founded in 2013 by Urška Sršen and Sando Mur with the goal of developing beautifully designed technology that would inform and inspire women. The technology would collect data on activity, sleep, stress, and reproductive health to empower women with knowledge about their own health.
 
-Bellabeat products are available at several retailers in addition to their website. The company has invested in traditional advertising media such as radio, billboards, print, and television, but focuses on digital marketing extensively. They have ads on Youtube and Google, and are active on multiple social media platforms including Facebook, Instagram, and Twitter.
+Bellabeat products are available at a number of online retailers in addition to their website. The company has invested in traditional advertising media such as radio, billboards, print, and television, but focuses on digital marketing extensively. They have ads on Youtube and Google, and are active on multiple social media platforms including Facebook, Instagram, and Twitter.
 
-**Bellabeat Products**
-- Bellabeat app provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. This data can help users better understand their current habits and make healthy decisions. The Bellabeat app connects to their line of smart wellness products.
-- Leaf: A wellness tracker that can be worn as a bracelet, necklace, or clip and connects to the Bellabeat app to track activity, sleep, and stress.
-- Time: A wellness watch with smart technology and connects to the Bellabeat app to track user activity, sleep, and stress.
-- Spring: A water bottle with smart technology and connects to the Bellabeat app to track daily water intake.
-- Bellabeat membership: A subscription-based membership program for users to have 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals.
+#### Bellabeat Products
+- **Bellabeat App:** provides users with health data related to their activity, sleep, stress, menstrual cycle, and mindfulness habits. 
+- **Leaf:** A wellness tracker that can be worn as a bracelet, necklace, or clip and connects to the Bellabeat app to track activity, sleep, and stress.
+- **Time:** A wellness watch with smart technology and connects to the Bellabeat app to track user activity, sleep, and stress.
+- **Spring:** A water bottle with smart technology and connects to the Bellabeat app to track daily water intake.
+- **Bellabeat Membership:** A subscription-based membership program for users to have 24/7 access to fully personalized guidance on nutrition, activity, sleep, health and beauty, and mindfulness based on their lifestyle and goals.
 
 
 ### Business Task
@@ -27,97 +25,10 @@ Analyze smart device data to gain insight on how consumers use smart devices and
 - How could these trends apply to Bellabeat customers?
 - How could these trends help influence Bellabeat marketing strategy?
 
+
 ### Prepare Data
 
-The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and contained FitBit tracker data from 33 users. There were 18 CSV files, each file containing a table varying in number of columns and content. I created a data dictionary to help me understand the data and determine which tables to use for my analysis. 
-
-```python
-#Setup Environment
-import pandas as pd
-import psycopg2
-import sqlalchemy
-import csv
-import os
-from IPython.display import display, HTML
-%load_ext sql
-
-#Connect to SQL database
-connect_url = 'postgresql://{}:{}@{}:{}/{}'.format(user,password,host,port,db)
-engine = sqlalchemy.create_engine(connect_url)
-%sql $connect_url
-%config SqlMagic.displaycon = False
-```
-
-```python
-#Create data dictionary
-csv_directory = 'data/'
-data_dict = {}
-for filename in os.listdir(csv_directory):
-    if filename.endswith('.csv'):
-        with open(os.path.join(csv_directory, filename), mode='r') as csv_file:
-            csv_reader = csv.reader(csv_file)
-            column_names = next(csv_reader)
-            data_dict[filename] = column_names
-
-#Print data dictionary          
-for key, values in data_dict.items():
-    formatted_values = ", ".join(map(str, values))
-    formatted_output = "<span style='color: lightseagreen'>{}</span>: {}".format(key, formatted_values)
-    display(HTML(formatted_output))
-```
-
-<span style='color: lightseagreen'>dailyactivity.csv</span>: Id, ActivityDate, TotalSteps, TotalDistance, TrackerDistance, LoggedActivitiesDistance, VeryActiveDistance, ModeratelyActiveDistance, LightActiveDistance, SedentaryActiveDistance, VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes, SedentaryMinutes, Calories
-
-<span style='color: lightseagreen'>dailycalories.csv</span>: Id, ActivityDay, Calories
-
-<span style='color: lightseagreen'>dailyintensities.csv</span>: Id, ActivityDay, SedentaryMinutes, LightlyActiveMinutes, FairlyActiveMinutes, VeryActiveMinutes, SedentaryActiveDistance, LightActiveDistance, ModeratelyActiveDistance, VeryActiveDistance
-
-<span style='color: lightseagreen'>dailysteps.csv</span>: Id, ActivityDay, StepTotal
-
-<span style='color: lightseagreen'>heartrate_seconds.csv</span>: Id, Time, Value
-
-<span style='color: lightseagreen'>hourlycalories.csv</span>: Id, ActivityHour, Calories
-
-<span style='color: lightseagreen'>hourlyintensities.csv</span>: Id, ActivityHour, TotalIntensity, AverageIntensity
-
-<span style='color: lightseagreen'>hourlysteps.csv</span>: Id, ActivityHour, StepTotal
-
-<span style='color: lightseagreen'>minutecaloriesnarrow.csv</span>: Id, ActivityMinute, Calories
-
-<span style='color: lightseagreen'>minutecalorieswide.csv</span>: Id, ActivityHour, Calories00, Calories01, Calories02, Calories03, Calories04, Calories05, Calories06, Calories07, Calories08, Calories09, Calories10, Calories11, Calories12, Calories13, Calories14, Calories15, Calories16, Calories17, Calories18, Calories19, Calories20, Calories21, Calories22, Calories23, Calories24, Calories25, Calories26, Calories27, Calories28, Calories29, Calories30, Calories31, Calories32, Calories33, Calories34, Calories35, Calories36, Calories37, Calories38, Calories39, Calories40, Calories41, Calories42, Calories43, Calories44, Calories45, Calories46, Calories47, Calories48, Calories49, Calories50, Calories51, Calories52, Calories53, Calories54, Calories55, Calories56, Calories57, Calories58, Calories59
-
-<span style='color: lightseagreen'>minuteintensitiesnarrow.csv</span>: Id, ActivityMinute, Intensity
-
-<span style='color: lightseagreen'>minuteintensitieswide.csv</span>: Id, ActivityHour, Intensity00, Intensity01, Intensity02, Intensity03, Intensity04, Intensity05, Intensity06, Intensity07, Intensity08, Intensity09, Intensity10, Intensity11, Intensity12, Intensity13, Intensity14, Intensity15, Intensity16, Intensity17, Intensity18, Intensity19, Intensity20, Intensity21, Intensity22, Intensity23, Intensity24, Intensity25, Intensity26, Intensity27, Intensity28, Intensity29, Intensity30, Intensity31, Intensity32, Intensity33, Intensity34, Intensity35, Intensity36, Intensity37, Intensity38, Intensity39, Intensity40, Intensity41, Intensity42, Intensity43, Intensity44, Intensity45, Intensity46, Intensity47, Intensity48, Intensity49, Intensity50, Intensity51, Intensity52, Intensity53, Intensity54, Intensity55, Intensity56, Intensity57, Intensity58, Intensity59
-
-<span style='color: lightseagreen'>minutemetsnarrow.csv</span>: Id, ActivityMinute, METs
-
-<span style='color: lightseagreen'>minutesleep.csv</span>: Id, date, value, logId
-
-<span style='color: lightseagreen'>minutestepsnarrow.csv</span>: Id, ActivityMinute, Steps
-
-<span style='color: lightseagreen'>minutestepswide.csv</span>: Id, ActivityHour, Steps00, Steps01, Steps02, Steps03, Steps04, Steps05, Steps06, Steps07, Steps08, Steps09, Steps10, Steps11, Steps12, Steps13, Steps14, Steps15, Steps16, Steps17, Steps18, Steps19, Steps20, Steps21, Steps22, Steps23, Steps24, Steps25, Steps26, Steps27, Steps28, Steps29, Steps30, Steps31, Steps32, Steps33, Steps34, Steps35, Steps36, Steps37, Steps38, Steps39, Steps40, Steps41, Steps42, Steps43, Steps44, Steps45, Steps46, Steps47, Steps48, Steps49, Steps50, Steps51, Steps52, Steps53, Steps54, Steps55, Steps56, Steps57, Steps58, Steps59
-
-<span style='color: lightseagreen'>sleepday.csv</span>: Id, SleepDay, TotalSleepRecords, TotalMinutesAsleep, TotalTimeInBed
-
-<span style='color: lightseagreen'>weightloginfo.csv</span>: Id, Date, WeightKg, WeightPounds, Fat, BMI, IsManualReport, LogId
-
-```python
-#Read multiple CSV files and load into SQL database
-import glob 
-import os
-file_names = glob.glob('data/*.csv')
-
-for names in file_names:
-    tablename = os.path.basename(names)
-    tablename, ext = os.path.splitext(tablename)
-    df = pd.read_csv(names)
-    df.columns = df.columns.str.lower() #convert column names to lower case
-    df.to_sql(tablename, engine, if_exists='replace', index=False)
-```
-
-### Process Data
-I verified that each CSV file was successfully imported into my PostgreSQL database. I found that there was a large number of tables and wanted to simplify the dataset by eliminating tables with redundant information or combine those with similar content.
+The dataset was obtained from [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit). There were 18 CSV files containing FitBit tracker data from 33 users collected from 4/12/2016 to 5/12/2016. I deployed a PostgreSQL database on AWS and imported the CSV files to the database. After verifying that a table was created for each CSV file, I proceeded to simplify the dataset by combining and dropping tables.
 
 - The `dailycalories`, `dailyintensities`, and `dailysteps` tables where dropped as the data already existed in the `dailyactivity` table. 
 - A new table with hourly data was created by joining the `hourlycalories`, `hourlyintensities`, and `hourlysteps` tables; the 3 tables were subsequently dropped.
@@ -146,7 +57,40 @@ The following tables remained in the database:
 * `hourlydata`
 * `sleepday`
 
+
 ```python
+#Import libraries
+import pandas as pd
+import psycopg2
+import sqlalchemy
+import csv
+import os
+%load_ext sql
+
+#Connect to SQL database
+connect_url = 'postgresql://{}:{}@{}:{}/{}'.format(user,password,host,port,db)
+engine = sqlalchemy.create_engine(connect_url)
+%sql $connect_url
+%config SqlMagic.displaycon = False
+```
+
+
+```python
+#Read multiple CSV files and load into SQL database
+import glob 
+import os
+file_names = glob.glob('data/*.csv')
+
+for names in file_names:
+    tablename = os.path.basename(names)
+    tablename, ext = os.path.splitext(tablename)
+    df = pd.read_csv(names)
+    df.columns = df.columns.str.lower() #convert column names to lower case
+    df.to_sql(tablename, engine, if_exists='replace', index=False)
+```
+
+
+```sql
 %%sql
 -- Verify tables in database
 SELECT table_name
@@ -155,6 +99,8 @@ WHERE table_schema = 'public';
 ```
 
     18 rows affected.
+    
+
 
 
 
@@ -223,7 +169,9 @@ WHERE table_schema = 'public';
 </table>
 
 
-```python
+
+
+```sql
 %%sql
 -- Join hourly tables and create new table
 CREATE TABLE hourlydata AS(
@@ -243,7 +191,18 @@ FULL OUTER JOIN hourlysteps AS s
 );
 ```
 
-```python
+    22099 rows affected.
+    
+
+
+
+
+    []
+
+
+
+
+```sql
 %%sql
 --Verify new table
 SELECT *
@@ -252,6 +211,8 @@ LIMIT 10;
 ```
 
     10 rows affected.
+    
+
 
 
 
@@ -351,7 +312,9 @@ LIMIT 10;
 </table>
 
 
-```python
+
+
+```sql
 %%sql
 -- Drop tables not used
 DROP TABLE IF EXISTS dailycalories, dailyintensities, dailysteps, hourlycalories, hourlyintensities, hourlysteps, minutecaloriesnarrow, minutecalorieswide, minuteintensitiesnarrow, minuteintensitieswide, minutemetsnarrow, minutesleep, minutestepsnarrow, minutestepswide, heartrate_seconds, weightloginfo;
@@ -364,6 +327,8 @@ WHERE table_schema = 'public';
 
     Done.
     3 rows affected.
+    
+
 
 
 
@@ -387,6 +352,7 @@ WHERE table_schema = 'public';
 </table>
 
 
+
 ### Clean Data
 
 3 Tables remained in the database: `dailyactivity`, `hourlydata`, and `sleepday`. After reviewing each table, including the column names and data types, I proceeded to check for any duplicates or null values.
@@ -400,7 +366,8 @@ WHERE table_schema = 'public';
 
 
 
-```python
+
+```sql
 %%sql
 -- Review table columns and data types
 SELECT c.table_name,
@@ -414,6 +381,8 @@ ORDER BY table_name, column_name;
 ```
 
     26 rows affected.
+    
+
 
 
 
@@ -560,7 +529,9 @@ ORDER BY table_name, column_name;
 </table>
 
 
-```python
+
+
+```sql
 %%sql
 SELECT *
 FROM sleepday
@@ -568,6 +539,8 @@ LIMIT 10;
 ```
 
     10 rows affected.
+    
+
 
 
 
@@ -656,7 +629,9 @@ LIMIT 10;
 </table>
 
 
-```python
+
+
+```sql
 %%sql
 --Rename sleepday column
 ALTER TABLE sleepday
@@ -672,7 +647,8 @@ ALTER TABLE hourlydata
 ALTER COLUMN activityhour TYPE timestamp USING activityhour::timestamp;
 ```
 
-```python
+
+```sql
 %%sql
 --Check for null values in tables
 SELECT column_name 
@@ -700,7 +676,28 @@ AND EXISTS (
     SELECT 1 FROM hourlydata WHERE column_name IS NULL);
 ```
 
-```python
+    0 rows affected.
+    0 rows affected.
+    0 rows affected.
+    
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>column_name</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+
+
+```sql
 %%sql
 --Check for duplicates
 SELECT id,
@@ -729,6 +726,8 @@ LIMIT 5;
     940 rows affected.
     22099 rows affected.
     5 rows affected.
+    
+
 
 
 
@@ -770,7 +769,9 @@ LIMIT 5;
 </table>
 
 
-```python
+
+
+```sql
 %%sql
 --Drop duplicates
 DELETE
@@ -782,10 +783,17 @@ WHERE ctid IN (SELECT ctid
                WHERE rn > 1);
 ```
 
+    3 rows affected.
+    
+
+
+
+
+    []
+
 ### Analyze Data
 
-After cleaning the data, I connected the dataset to Tableau to build visualizations and extract insights. My Tableau workbook can be found here: <br>
-[https://public.tableau.com/views/bellabeat_dashboard_16815197263150/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link](https://public.tableau.com/views/bellabeat_dashboard_16815197263150/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
+After cleaning the data, I connected the dataset to Tableau to build visualizations and extract insights. My Tableau workbook can be found [here.](https://public.tableau.com/views/bellabeat_dashboard_16815197263150/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
 <br>
 
 <div class="image-container">
