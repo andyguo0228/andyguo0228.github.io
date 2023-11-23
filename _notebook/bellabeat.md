@@ -2,7 +2,9 @@
 layout: notebook
 title: Bellabeat Fitness Tracker Project 🏃‍♂️
 ---
-This is the capestone project for the Google data analytics certificate. I'll be conducting an in-depth case study on Bellabeat, a high-tech manufacturer of health-focused products for women. My focus will be on analyzing smart device data to gain valuable insights into consumer usage patterns, which will enable me to provide data-driven recommendations for optimizing Bellabeat's marketing strategy. Although I will be using Python to prepare the data, my aim is to demonstrate my proficiency in utilizing SQL and Tableau.
+This is the capestone project for the Google data analytics certificate. I'll be conducting an in-depth case study on Bellabeat, a high-tech manufacturer of health-focused products for women. My focus will be on analyzing smart device data to gain valuable insights into consumer usage patterns, which will enable me to provide data-driven recommendations for optimizing Bellabeat's marketing strategy. I deployed an AWS database, used Python to connect and import the data, SQL to clean and process the data, and Tableau to visualize the data. 
+
+Although I will be using Python to prepare the data, my aim is to demonstrate my proficiency in utilizing SQL and Tableau.
 
 # Background
 Bellabeat was founded in 2013 by Urška Sršen and Sando Mur with the goal of developing beautifully designed technology that would inform and inspire women. The technology would collect data on activity, sleep, stress, and reproductive health to empower women with knowledge about their own health.
