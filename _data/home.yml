@@ -2,14 +2,14 @@ navlist:
   - title: About Me
     url: /
 
-  - title: Bellabeat Project
-    url: /notebook/bellabeat.html
+  - title: Maven Healthcare
+    url: /notebook/maven_health.html
 
   - title: Divvy Bike Project
     url: /notebook/bike_share_project.html
 
-  - title: Maven Healthcare
-    url: /notebook/maven_health.html
+  - title: Bellabeat Project
+    url: /notebook/bellabeat.html
 
 project_entries:
 
